@@ -1,0 +1,152 @@
+body {
+    background-color: #fff9db; /* light yellow */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* TOP PLAYER IMAGES */
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.players img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* MAIN FLEX CONTAINER */
+.classifier-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    gap: 40px;
+}
+
+.upload-box {
+    width: 300px;
+    height: 210px;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.upload-box:hover {
+    border-color: green;
+}
+
+.upload-icon {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.upload-box p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.upload-box input {
+    margin: 10px auto;
+    display: block;
+}
+
+.upload-box button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* RIGHT */
+.result-section {
+    flex: 1;
+}
+
+#prediction {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* TABLE */
+#probability-table {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+#probability-table th,
+#probability-table td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+#probability-table th {
+    background-color: green;
+    color: white;
+}
+
+.player {
+    text-align: center;
+}
+
+.player img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.player p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.classify-btn {
+    display: block;
+    margin: 15px auto 0;
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px 28px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#probability-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #eaffea; /* light green */
+}
+
+#probability-table th {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#probability-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #cfcfcf;
+    font-weight: 500;
+}

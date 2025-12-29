@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indian Cricketers Image Classifier</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1 class="title">Indian Cricketers Image Classifier</h1>
+
+    <div class="players">
+
+    <div class="player">
+        <img src="{{ url_for('static', filename='images/sachin.jpg') }}">
+        <p>Sachin Tendulkar</p>
+    </div>
+
+    <div class="player">
+        <img src="{{ url_for('static', filename='images/dhoni.jpg') }}">
+        <p>MS Dhoni</p>
+    </div>
+
+    <div class="player">
+        <img src="{{ url_for('static', filename='images/rohit.jpg') }}">
+        <p>Rohit Sharma</p>
+    </div>
+
+    <div class="player">
+        <img src="{{ url_for('static', filename='images/virat.jpg') }}">
+        <p>Virat Kohli</p>
+    </div>
+
+    <div class="player">
+        <img src="{{ url_for('static', filename='images/bumrah.jpg') }}">
+        <p>Jasprit Bumrah</p>
+    </div>
+
+    <div class="player">
+        <img src="{{ url_for('static', filename='images/rahul.jpg') }}">
+        <p>KL Rahul</p>
+    </div>
+
+</div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="classifier-container">
+
+        <div class="upload-section">
+
+           <div class="upload-box" id="drop-area">
+              <img class="upload-icon"
+                   src="{{ url_for('static', filename='images/upload.png') }}">
+
+              <p>Drag & drop image here</p>
+              <p>or</p>
+
+              <input type="file" id="imageUpload" accept="image/*">
+           </div>
+
+    <!-- BUTTON BELOW UPLOAD BOX -->
+           <button class="classify-btn" onclick="classifyImage()">Classify</button>
+
+    </div>
+
+
+
+        <!-- RIGHT: RESULT -->
+        <div class="result-section">
+           
+        <h3 id="prediction"></h3>
+
+            <table id="probability-table">
+    <thead>
+        <tr>
+            <th>Player</th>
+            <th>Probability</th>
+        </tr>
+    </thead>
+    <tbody id="probability-body">
+        <tr>
+            <td>Sachin Tendulkar</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>MS Dhoni</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>Rohit Sharma</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>Virat Kohli</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>Jasprit Bumrah</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>KL Rahul</td>
+            <td>--</td>
+        </tr>
+    </tbody>
+</table>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+</body>
+</html>
